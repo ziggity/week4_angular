@@ -52,6 +52,25 @@ _No known bugs, yet_
 * $`cd week4_angular`
 * $`npm install`
 * $`bower install`
+* You'll also want to create a file in the root directory called api-keys.ts
+* Please follow instructions below to set-up Firebase api access point.
+
+# Firebase config
+
+* Go to https://firebase.google.com/ and set up an account
+* Create a new project -
+* Select the third icon option: "Add Firebase To Your Website"
+fill out the following info into your api-keys file: (it might look something like this:
+  export let masterFirebaseConfig = {
+    apiKey: "AIzaSyCaXFeBuwFyf3ctgaM4jAyhS0OtvY002yA",
+    authDomain: "week4-e74a9.firebaseapp.com",
+    databaseURL: "https://week4-e74a9.firebaseio.com",
+    storageBucket: "week4-e74a9.appspot.com",
+    messagingSenderId: "859636884443"
+  };
+)
+* Change the option 2nd option (Rules) on the database tab from read / write to True & true.
+
 
 ## Running the app:
 * $`ng serve`
