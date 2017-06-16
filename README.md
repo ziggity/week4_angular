@@ -51,6 +51,7 @@ _No known bugs, yet_
 * `Download or clone project files:https://github.com/ziggity/week4_angular `
 * $`cd week4_angular`
 * $`npm install`
+* $`bower install`
 
 ## Running the app:
 * $`ng serve`
