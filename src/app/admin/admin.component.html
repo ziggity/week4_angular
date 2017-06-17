@@ -1,3 +1,59 @@
-<p>
-  admin works!
-</p>
+<div class="row">
+  <div class="col-xs-5 well">
+  <h3>Add New Book to Our Reading List!</h3>
+
+    <div>
+      <label>Book Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Book Author:</label>
+      <br>
+      <input #newAuthor>
+    </div>
+
+    <div>
+      <label>Short Book Description:</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
+
+    <div>
+      <label>Published in what year?:</label>
+      <br>
+      <input #newPublished type="number">
+    </div>
+
+    <div>
+      <label>Add to our global reading list?:</label>
+      <select #newglobalReadList>
+        <option value="globalReadList">Yes</option>
+        <option value="null">No</option>
+      </select>
+    </div>
+    <div>
+      <label>Care to share your rating for the book, it's on a scale of 1-10, 10 being best:</label>
+        <input #newRating type="number">
+    </div>
+    <br>
+    <br>
+    <button class="btn btn-success"(click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newPublished.value, newglobalReadList.value, newRating.value); newTitle.value=''; newAuthor.value=''; newDescription.value=''; newPublished.value=''; newRating.value='';">Add</button>
+    <br>
+  </div>
+  <div class="col-xs-6 well">
+  <h3>Click here to add new LEET Coder to Our Club</h3>
+  <app-new-user></app-new-user>
+</div>
+<div class="well row">
+
+    <h3>Edit</h3>
+    <div class="col-xs-6">
+      <app-user-list></app-user-list>
+    </div>
+    <div class="col-xs-6">
+      <app-book-list></app-book-list>
+    </div>
+
+</div>

@@ -59,8 +59,8 @@ _No known bugs, yet_
 
 * Go to https://firebase.google.com/ and set up an account
 * Create a new project -
-* Select the third icon option: "Add Firebase To Your Website"
-fill out the following info into your api-keys file: (it might look something like this:
+* Select the third icon option on the landing page: "Add Firebase To Your Website"
+* Fill out the following info into your api-keys.ts file: (it might look something like this:
   export let masterFirebaseConfig = {
     apiKey: "AIzaSyCaXFeBuwFyf3ctgaM4jAyhS0OtvY002yA",
     authDomain: "week4-e74a9.firebaseapp.com",
@@ -69,11 +69,11 @@ fill out the following info into your api-keys file: (it might look something li
     messagingSenderId: "859636884443"
   };
 )
-* Change the option 2nd option (Rules) on the database tab from read / write to True & true.
+* Change the 2nd option (Rules) on the database tab from read / write to true & true.
 
 
 ## Running the app:
-* $`ng serve`
+* $`ng serve --open`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Support and contact details:

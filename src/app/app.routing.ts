@@ -1,15 +1,12 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { AdminComponent } from './admin/admin.component';
-import { EditMemberComponent } from './edit-member/edit-member.component';
-import { MembersComponent } from './members/members.component';
-import { NewMemberComponent } from './new-member/new-member.component';
-import { RoleFilterPipe } from './role-filter.pipe';
-import { BookComponent } from './book/book.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component'
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AllBooksComponent } from './all-books/all-books.component';
 
 const appRoutes: Routes = [
   {
@@ -25,16 +22,16 @@ const appRoutes: Routes = [
     component: AdminComponent
   },
   {
+    path: 'all-books',
+    component: AllBooksComponent
+  },
+  {
     path: 'books/:id',
-    component: BookComponent
+    component: BookDetailComponent
   },
   {
-    path: 'members/:id',
-    component: MembersComponent
-  },
-  {
-    path: 'editmember/:id',
-    component: EditMemberComponent
+    path: 'users/:id',
+    component: UserProfileComponent
   }
 ];
 

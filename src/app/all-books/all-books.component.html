@@ -1,0 +1,9 @@
+<h1>Books on our global read list:</h1>
+<h3>Click on them for more details</h3>
+<div *ngFor="let book of books | async | globalReadList" class="well">
+  <div class="panel-body">
+  <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+  <h5>{{book.description}}</h5>
+    <h5>{{book.rating}}</h5>
+  </div>
+</div>

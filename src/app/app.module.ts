@@ -8,15 +8,18 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { AdminComponent } from './admin/admin.component';
-import { EditMemberComponent } from './edit-member/edit-member.component';
-import { MembersComponent } from './members/members.component';
-import { NewMemberComponent } from './new-member/new-member.component';
-import { RoleFilterPipe } from './role-filter.pipe';
-import { BookComponent } from './book/book.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
+import { AboutComponent } from './about/about.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { BookListComponent } from './book-list/book-list.component';
+import { AllBooksComponent } from './all-books/all-books.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { globalReadListPipe } from './globalReadList.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,14 +31,18 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    WelcomeComponent,
     AboutComponent,
+    BookDetailComponent,
+    UserProfileComponent,
     AdminComponent,
-    EditMemberComponent,
-    MembersComponent,
-    NewMemberComponent,
-    RoleFilterPipe,
-    BookComponent,
-    WelcomeComponent
+    EditBookComponent,
+    EditUserComponent,
+    UserListComponent,
+    BookListComponent,
+    AllBooksComponent,
+    NewUserComponent,
+    globalReadListPipe
   ],
   imports: [
     BrowserModule,

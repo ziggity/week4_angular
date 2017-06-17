@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
-export class ClubPage {
+export class L33T C0D3 B00k CLUBPage {
   navigateTo() {
     return browser.get('/');
   }

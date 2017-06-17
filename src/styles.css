@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #e9ece5;
+}
+h3 {
+  color: black;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+.container {
+  background-color: #blue;
+}
+.well {
+  background-color: #grey;
+}
+.jumbotron {
+    margin-bottom: 15px;
+    background: #b3c2bf;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    text-shadow: black 0.3em 0.9em 0.9em;
+}
+.label {
+  text-align: center;
+  text-shadow: black 0.3em 0.9em 0.9em;
+}
+.linky:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.well {
+  background: #c0dfd9 !important;
+ }

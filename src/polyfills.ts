@@ -7,7 +7,7 @@
  *   2. Application imports. Files imported after ZoneJS that should be loaded before your main
  *      file.
  *
- * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
+ * The globalReadList setup is for so-called "evergreen" browsers; the last versions of browsers that
  * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
@@ -31,6 +31,7 @@
 // import 'core-js/es6/array';
 // import 'core-js/es6/regexp';
 // import 'core-js/es6/map';
+// import 'core-js/es6/weak-map';
 // import 'core-js/es6/set';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
@@ -66,3 +67,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
  */
 // import 'intl';  // Run `npm install --save intl`.
+/**
+ * Need to import at least one locale-data with intl.
+ */
+// import 'intl/locale-data/jsonp/en';
